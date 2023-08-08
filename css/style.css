@@ -1,0 +1,237 @@
+/* Table of Contents */
+/* 1.General */
+/* 2.Navbar */
+/* 3.Banner */
+/* 4.Services */
+/* 5.Portfolio */
+/* 6.Blog */
+/* 7.Contact */
+/* 8.Footer */
+
+/* 1.General */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Background color */
+    --s-color: white;
+    --p-color: rgb(0, 64, 255);
+    --bg-white: white;
+    --bg-light: rgb(13, 0, 255);
+    --bg-black: black;
+    --bg-gray: #aeaeae;
+
+    /* Text color */
+    --s-text: white;
+    --p-text: rgb(8, 99, 255);
+    --text-white: white;
+    --text-light: rgb(0, 17, 255);
+    --text-black: black;
+    --text-gray: #eee;
+
+    /* Font family */
+    --p-font: cursive;
+    --s-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--s-font);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ /* Custom CSS */
+/* ::-webkit-scrollbar {
+    width: 0.25rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--p-color);
+} */
+
+section{
+    padding: 5em 0;
+    padding-left: 10px;
+}
+.main-btn {
+    display: inline-block;
+    font-family: var(--p-font);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2.875rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3.125rem;
+    text-transform: uppercase;
+    box-shadow: 0 0.625 1.875 rgb(118, 85, 25, 0.3);
+    padding: 0 2.625rem;
+    transition: all .3s ease-in-out;
+    margin-bottom: 10px;
+    /* -webkit-transition: all .3s ease-in-out; */
+}
+.primary-btn{
+    color: var(--p-text);
+    background-color: var(--bg-white);
+}
+.primary-btn:hover {
+    border-color: var(--p-color);
+    background-color: var(--bg-light);
+    color: var(--s-text);
+    box-shadow: none;
+}
+.secondary-btn{
+    background-color: var(--bg-white);
+    color: var(--p-text);
+    border-color: var(--p-color);
+}
+.secondary-btn:hover {
+    background-color: var(--bg-gray);
+    color: var(--text-white);
+    box-shadow: none;
+}
+h1 {
+    font-family: cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    margin-bottom: 1.225;
+    color: var(--text-white);
+}
+h2 {
+    font-family: var(--p-font);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    margin-bottom: 1.5;
+    color: var(--text-white);
+}
+
+/* Navbar */
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.header .navbar {
+    padding: 0.93rem 0;
+    transition: all .2s linear;
+    /* -webkit-transition: all .2s linear; */
+}
+.header .nav-item {
+    margin: 0 0.625rem; 
+}
+.header .nav-item .nav-link {
+    font-family: var(--p-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.925rem;
+    display: inline-block;
+}
+.header .nav-item .nav-link .active,
+.header .nav-item .nav-link:hover {
+    color: var(--p-text);
+    font-weight: 900;
+}
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bg-white);
+}
+.logo-text{
+    color: rgb(0, 60, 255);
+    font-weight: 700;
+}
+/* Banner */
+#home{
+    padding-top: 200px;
+}
+.banner {
+    background: rgb(0, 81, 255);
+}
+.banner-content {
+    width: 55%;
+}
+.profilepic{
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+#about {
+    background: var(--bg-white);
+}
+.about1 h1{
+    color: var(--p-text);
+    text-align: center;
+}
+.about-text p{
+    text-align: justify;
+}
+
+/* Services */
+#services {
+    background: var(--bg-light);
+}
+.s-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card {
+    background:rgb(25, 151, 255);
+}
+.card-body h1 {
+    color: white;
+    text-align: center;
+}
+.service-margin{
+    margin-bottom: 25px;
+}
+/* Contact */
+.contact {
+    background-color: #cccccc;
+}
+.contact-head {
+    color: var(--p-color);
+}
+.email {
+    width: 300px;
+}
+.email-text {
+    color: var(--p-color);
+    font-family: var(--p-font);
+    font-size: 2.5rem;
+}
+.form-label {
+    color:var(--p-color);
+    font-weight: 700;
+}
+.navbar-brand p{
+    display: inline-block;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 30px;
+    color: var(--p-color);
+    margin-left: -10px;
+    font-family:monospace;
+}
+.navbar-brand img{
+    display: inline-block;
+}
+.footer {
+    background-color: var(--bg-light);
+    padding: 30px;
+    color: var(--s-text);
+    font-family: var(--p-font);
+}
